@@ -6,8 +6,8 @@ machine:
   environment:
     GYM_CODE_SIGNING_IDENTITY: "iPhone Developer: Aliaksandr Hubanau (M56ZH2CWG7)"
 
-deployment:
-  test_distribution:
-    branch: master
-     commands:
-       - ./TestSwiftRepo/donothing.sh
+# deployment:
+#   test_distribution:
+#     branch: master
+#      commands:
+#        - ./TestSwiftRepo/donothing.sh
