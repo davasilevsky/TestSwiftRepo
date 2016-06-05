@@ -9,5 +9,5 @@ machine:
 deployment:
   staging:
     branch: master
-     commands:
-       - ./donothing.sh
+    commands:
+      - ./donothing.sh
