@@ -10,4 +10,4 @@ deployment:
   test_distribution:
     branch: master
      commands:
-       - ./build-purely.sh
+       - ./TestSwiftRepo/donothing.sh
