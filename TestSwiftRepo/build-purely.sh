@@ -12,6 +12,8 @@ do
   esac
 done
 
+cd ./TestSwiftRepo
+
 ## Archiving                                                                    
 echo "Archiving..."
 xcodebuild -workspace ./TestSwiftRepo.xcworkspace -scheme TestSwiftRepo archive -archivePath ./TestSwiftRepo.xcarchive
