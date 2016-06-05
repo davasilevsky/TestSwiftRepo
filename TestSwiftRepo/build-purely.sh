@@ -23,8 +23,8 @@ echo "Creating IPA file..."
 xcodebuild  -exportArchive \
             -exportOptionsPlist ./exportOptions.plist \
             -archivePath ./TestSwiftRepo.xcarchive \
-            -exportPath ./TestSwiftRepo/Translate.ipa
+            -exportPath ./TestSwiftRepo/Translate_ipa
 
-sh ./testfairy-upload-ios.sh ./TestSwiftRepo/Translate.ipa
+sh ./testfairy-upload-ios.sh ./TestSwiftRepo/Translate_ipa/Translate.ipa
 rm -rf ./TestSwiftRepo.xcarchive
-rm ./TestSwiftRepo/Translate.ipa
+rm ./TestSwiftRepo/Translate_ipa/Translate.ipa
