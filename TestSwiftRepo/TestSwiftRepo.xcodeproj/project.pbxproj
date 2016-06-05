@@ -22,6 +22,7 @@
 		929CFDBB1D048CEF006B55F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929CFDBE1D048CEF006B55F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929CFDC01D048CEF006B55F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929CFDC61D04B679006B55F0 /* testfairy-upload-ios.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "testfairy-upload-ios.sh"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 				929CFDBB1D048CEF006B55F0 /* Assets.xcassets */,
 				929CFDBD1D048CEF006B55F0 /* LaunchScreen.storyboard */,
 				929CFDC01D048CEF006B55F0 /* Info.plist */,
+				929CFDC61D04B679006B55F0 /* testfairy-upload-ios.sh */,
 			);
 			path = TestSwiftRepo;
 			sourceTree = "<group>";
@@ -288,6 +290,7 @@
 				929CFDC51D048CEF006B55F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

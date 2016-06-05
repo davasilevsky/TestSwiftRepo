@@ -25,6 +25,6 @@ xcodebuild  -exportArchive \
             -archivePath ./TestSwiftRepo.xcarchive \
             -exportPath ./TestSwiftRepo/Translate.ipa
 
-# sh ./Nitro/etc/testfairy-upload-ios.sh ./Nitro/etc/Translate.ipa/Translate.ipa
+sh ./testfairy-upload-ios.sh ./TestSwiftRepo/Translate.ipa
 rm -rf ./TestSwiftRepo.xcarchive
-# rm ./Nitro/etc/Translate.ipa/Translate.ipa
+rm ./TestSwiftRepo/Translate.ipa
