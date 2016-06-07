@@ -23,7 +23,7 @@ increment_version ()
 } 
 
 # Only increment the build number if source files have changed
-if [ -n "$(find "$dir" \! -path "*xcuserdata*" \! -path "*.git" -newer "$plist")" ]; then
+if [ -n "$(find "$dir" \! -path "*xcuserdata*" \! -path "*.git")" ]; then
     bundleVersion=$(/usr/libexec/Plistbuddy -c "Print CFBundleVersion" "$plist")
     if [ -z "$bundleVersion" ]; then
         echo "No build number in $plist"
