@@ -12,7 +12,7 @@ do
   esac
 done
 
-# cd ./TestSwiftRepo
+cd ./TestSwiftRepo
 
 ## Archiving                                                                    
 echo "Archiving..."
