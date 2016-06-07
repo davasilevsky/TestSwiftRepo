@@ -6,6 +6,11 @@ machine:
   environment:
     GYM_CODE_SIGNING_IDENTITY: "iPhone Developer: Aliaksandr Hubanau (M56ZH2CWG7)"
 
+general:
+  branches:
+    only:
+      - master # list of branches to build
+
 deployment:
   staging:
     branch: master

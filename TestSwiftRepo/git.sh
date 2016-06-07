@@ -16,4 +16,4 @@ cd ..
 
 git add .
 git commit -m "$comment"
-git push --set-upstream origin master
+git push --set-upstream origin circleci

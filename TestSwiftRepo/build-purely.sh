@@ -29,4 +29,5 @@ echo "Creating IPA file..."
 # rm -rf ./TestSwiftRepo.xcarchive
 # rm ./TestSwiftRepo/TestSwiftRepo_ipa/TestSwiftRepo.ipa
 
+echo $PWD
 sh ./bump_build_number.sh
