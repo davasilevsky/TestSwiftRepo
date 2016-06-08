@@ -1,6 +1,13 @@
 test:
   override:
     - echo "test"
+  post:
+    - >
+      if [ -n "${IS_NIGHTLY_BUILD}" ]; then
+        - echo "This is nightly build"
+      else
+        - echo "Manual build"
+      fi
 
 machine:
   environment:
@@ -15,10 +22,6 @@ deployment:
   staging:
     branch: master
     commands:
-      if [ -n "${IS_NIGHTLY_BUILD}" ]; then
-        - echo "This is nightly build"
-      else
-        - echo "Manual build"
-      fi
+      - echo "Command is shut up"
 
 #- ./TestSwiftRepo/build-purely.sh
