@@ -29,5 +29,10 @@ echo "Creating IPA file..."
 # rm -rf ./TestSwiftRepo.xcarchive
 # rm ./TestSwiftRepo/TestSwiftRepo_ipa/TestSwiftRepo.ipa
 
-echo $PWD
-sh ./bump_build_number.sh
+IS_NIGHTLY_BUILD=$1
+echo "nightly flag is: $IS_NIGHTLY_BUILD"
+if [ -n "${IS_NIGHTLY_BUILD}" ] && [ "$IS_NIGHTLY_BUILD" = true ]; then
+  echo "NIGHTLY case"
+else
+  echo "MANUAL case"
+fi
