@@ -9,10 +9,17 @@ machine:
 general:
   branches:
     only:
-      - master # list of branches to build
+      - non_existent # list of branches to build
 
 deployment:
   staging:
     branch: master
     commands:
-      - ./TestSwiftRepo/build-purely.sh
+      - >
+        if [ -n "${IS_NIGHTLY_BUILD}" ]; then
+          - echo "This is nightly build"
+        else
+          - echo "Manual build"
+        fi
+
+#- ./TestSwiftRepo/build-purely.sh
