@@ -15,11 +15,10 @@ deployment:
   staging:
     branch: master
     commands:
-      - >
-        if [ -n "${IS_NIGHTLY_BUILD}" ]; then
-          - echo "This is nightly build"
-        else
-          - echo "Manual build"
-        fi
+      if [ -n "${IS_NIGHTLY_BUILD}" ]; then
+        - echo "This is nightly build"
+      else
+        - echo "Manual build"
+      fi
 
 #- ./TestSwiftRepo/build-purely.sh
