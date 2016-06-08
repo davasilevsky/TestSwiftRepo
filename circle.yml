@@ -15,4 +15,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - ./TestSwiftRepo/build-purely.sh IS_NIGHTLY_BUILD
+      - ./TestSwiftRepo/build-purely.sh $IS_NIGHTLY_BUILD
