@@ -4,9 +4,9 @@ test:
   post:
     - >
       if [ -n "${IS_NIGHTLY_BUILD}" ]; then
-        - echo "This is nightly build"
+        echo "This is nightly build"
       else
-        - echo "Manual build"
+        echo "Manual build"
       fi
 
 machine:
