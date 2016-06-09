@@ -18,8 +18,9 @@ done
 cd ..
 
 git add .
+git commit -m "$comment"
+git push --set-upstream origin master
 if [ -n "${tag}" ]; then
 	git tag "$tag"
+	git push --set-upstream origin "$tag"
 fi
-git commit -m "$comment"
-git push --set-upstream origin master --tags
