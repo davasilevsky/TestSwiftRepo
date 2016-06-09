@@ -69,6 +69,8 @@ if [ ! -f "${IPA_FILENAME}" ]; then
 	exit 2
 fi
 
+exit 0
+
 # temporary file paths
 DATE=`date`
 
