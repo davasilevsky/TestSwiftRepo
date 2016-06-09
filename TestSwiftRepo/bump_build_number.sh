@@ -35,7 +35,7 @@ if [ -n "$(find "$dir" \! -path "*xcuserdata*" \! -path "*.git")" ]; then
     /usr/libexec/Plistbuddy -c "Set CFBundleShortVersionString $bundleVersion" "$plist"
     echo "Incremented build number to $bundleVersion"
 
-    sh ./git.sh -c "Incremented build number to $bundleVersion"
+    sh ./git.sh -c "Incremented build number to $bundleVersion" -t "$bundleVersion"
 else
     echo "Not incrementing build number as source files have not changed"
 fi
